@@ -21,3 +21,31 @@
 
 将引擎作为dll给application动态加载使用
 
+
+
+通过预编译头，自动决定宏在不同文件中的含义
+
+```
+#ifdef HZ_PLATFORM_WINDOWS
+	#ifdef HZ_BUILD_DLL
+		#define HAZEL_API __declspec(dllexport)
+	#else
+		#define HAZEL_API __declspec(dllimport)
+	#endif
+#else
+	#error Hazel only supports Windows!
+#endif
+```
+
+
+
+> git reset .
+>
+> git add .
+>
+> git status
+>
+> git commit -m "...."
+>
+> git push origin main
+
