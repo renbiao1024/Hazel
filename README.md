@@ -72,3 +72,18 @@
 #define HZ_FATAL(...)	::Hazel::Log::GetClientLogger()->fatal(__VA_ARGS__)
 ```
 
+## premake
+
+使用premake5对项目预配置
+
+![image-20221001175412356](./assets/image-20221001175412356.png)
+
+## Event System
+
+![image-20221002165823928](./assets/image-20221002165823928.png)
+
+![image-20221002215339453](./assets/image-20221002215339453.png)<< 被重载 返回ToString()
+
+![image-20221002220213227](./assets/image-20221002220213227.png)
+
+![image-20221002220108832](./assets/image-20221002220108832.png)

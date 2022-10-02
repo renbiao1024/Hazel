@@ -27,13 +27,14 @@ project "Hazel" -- 项目设置
 
 	includedirs -- 预包含头文件
 	{
+		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 
 		defines -- 预编译宏
 		{
@@ -86,7 +87,7 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.19041.0"
+		systemversion "latest"
 
 		defines
 		{
