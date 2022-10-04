@@ -1,22 +1,22 @@
 workspace "Hazel"
 	architecture "x64"
-	startproject "Sandbox" 
-	
-	configurations -- 配置信息
+
+	configurations
 	{
 		"Debug",
 		"Release",
 		"Dist"
 	}
 
-outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}" --输出目录
+outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 
 include "Hazel/vendor/GLFW"
 
-project "Hazel" -- 项目设置
+project "Hazel"
 	location "Hazel"
 	kind "SharedLib"
 	language "C++"
@@ -24,7 +24,7 @@ project "Hazel" -- 项目设置
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	pchheader "hzpch.h" -- hazel pre compileing header 预编译头
+	pchheader "hzpch.h"
 	pchsource "Hazel/src/hzpch.cpp"
 
 	files
@@ -33,7 +33,7 @@ project "Hazel" -- 项目设置
 		"%{prj.name}/src/**.cpp"
 	}
 
-	includedirs -- 预包含头文件
+	includedirs
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
@@ -51,7 +51,7 @@ project "Hazel" -- 项目设置
 		staticruntime "On"
 		systemversion "latest"
 
-		defines -- 预编译宏
+		defines
 		{
 			"HZ_PLATFORM_WINDOWS",
 			"HZ_BUILD_DLL"
@@ -64,14 +64,17 @@ project "Hazel" -- 项目设置
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
-		symbols "On" --调试符号
+		buildoptions "/MDd"
+		symbols "On"
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
-		optimize "On" --优化
+		buildoptions "/MD"
+		optimize "On"
 
 	filter "configurations:Dist"
 		defines "HZ_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -94,7 +97,7 @@ project "Sandbox"
 		"Hazel/src"
 	}
 
-	links --链接
+	links
 	{
 		"Hazel"
 	}
@@ -111,12 +114,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "HZ_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "HZ_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "HZ_DIST"
+		buildoptions "/MD"
 		optimize "On"
