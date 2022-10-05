@@ -131,3 +131,15 @@
 ## 层/层栈
 
 ![image-20221004093814740](./assets/image-20221004093814740.png)
+
+## 添加GLAD
+
+> GLFW 提供 OpenGL, OpenGL ES 和 Vulkan 的桌面开发环境，是一个跨平台的开源库。利用它可以创建窗口、处理键盘鼠标等事件。windows下它使用win32 api创建窗口，WGL关联OPENGL上下文。Linux 下使用 X11创建窗口，GLX关联OPENGL上下文。MAC下使用cocoa创建窗口，AGL关联OPENGL上下文。
+>
+> GLAD 的功能比较专一，专门加载OpenGL的函数指针。查看源码有大量看起来重复的代码，但是是很必要的，因为每一个函数都要重复相同的搜寻过程。都是些dirty work,dirty code。
+
+## 添加UI界面
+
+封装ImGUI
+
+设置输入回调事件
