@@ -19,6 +19,30 @@ namespace Hazel {
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
 		m_ImGuiLayer = new ImGuiLayer();
 		PushOverlay(m_ImGuiLayer);
+
+		//渲染三角形的步骤
+		//准备顶点数据
+		glGenVertexArrays(1, &m_VertexArray); //生成顶点数组
+		glBindVertexArray(m_VertexArray); //绑定顶点数组
+
+		glGenBuffers(1, &m_VertexBuffer);//生成顶点buffer
+		glBindBuffer(GL_ARRAY_BUFFER,m_VertexBuffer);//绑定顶点buffer
+
+		float vertices[3 * 3] = { //顶点位置信息
+			-0.5f, -0.5f, 0.0f,
+			0.5f, -0.5f, 0.0f,
+			0.0f, 0.5f, 0.0f
+		};
+
+		glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+		glEnableVertexAttribArray(0);//启用数据数组
+		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
+
+		//准备索引数据
+		glGenBuffers(1, &m_IndexBuffer);
+		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m_IndexBuffer);
+		unsigned int indices[3] = { 0, 1, 2 }; 
+		glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 	}
 
 	Hazel::Application::~Application()
@@ -52,9 +76,12 @@ namespace Hazel {
 	{
 		while (m_Running)
 		{
-			glClearColor(1, 0.5, 0.5, 1);
+			glClearColor(0.1, 0.1, 0.1, 1);
 			glClear(GL_COLOR_BUFFER_BIT);
-
+			//根据顶点数组绘制三角形
+			glBindVertexArray(m_VertexArray);
+			glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, nullptr);
+			
 			for (Layer* layer : m_LayerStack)
 			{
 				layer->OnUpdate();

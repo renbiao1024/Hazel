@@ -166,3 +166,32 @@
 
 ## 添加glm
 
+## imgui吸附界面
+
+## 渲染
+
+### 抽象渲染上下文
+
+![image-20221007162203084](./assets/image-20221007162203084.png)
+
+![image-20221007162211999](./assets/image-20221007162211999.png)
+
+为以后可能添加的directX等留空
+
+### 绘制三角形
+
+>  glEnableVertexAttribArray(no)
+>
+> no是一个数字，比如6，这个数字就表示某个顶点属性，或者表示其编号，因为VAO可以看成一个数组，这个数字也可以看成这个数组的索引，它对应的应该是glsl中的layout (location = 6) 这段代码。
+>
+> 我们可以认为VAO这个数组中的每个元素都有两个状态，enabled和disabled，默认都是disabled，此时 VertexShader去读取对应的值时，读到的将是一个默认值（而不是数组中的值）
+>
+> glEnableVertexAttribArray的作用就是将该状态置为enabled，此时着色器读取值才能生效
+>
+> glVertexAttribPointer 
+>
+> 我们可以看到这个参数基本上是顶点格式信息，同时第一个参数是一个索引，这个索引和上面的索引应该是同一个意思，表示这个顶点格式信息（顶点属性）要存放在VAO的哪个元素中                       
+
+![image-20221007201031966](./assets/image-20221007201031966.png)
+
+![image-20221007201045135](./assets/image-20221007201045135.png)
