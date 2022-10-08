@@ -70,10 +70,6 @@ namespace Hazel {
 		m_Shader.reset(new Shader(vertexSrc, fragmentSrc));
 	}
 
-	Hazel::Application::~Application()
-	{
-	}
-
 	void Application::OnEvent(Event& e)
 	{
 		EventDispatcher dispatcher(e);
