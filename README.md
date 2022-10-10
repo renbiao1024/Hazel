@@ -247,5 +247,16 @@
 
 用RendererCommand封装RendererAPI的操作
 
-## 相机
+### 添加正交相机
 
+![image-20221010192145444](./assets/image-20221010192145444.png)
+
+根据相机的位置 计算vp矩阵
+
+在场景开始时获取到vp矩阵
+
+![image-20221010192430647](./assets/image-20221010192430647.png)
+
+在shader中调用这个vp矩阵
+
+![image-20221010192615983](./assets/image-20221010192615983.png)
