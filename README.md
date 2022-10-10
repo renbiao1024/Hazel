@@ -232,3 +232,20 @@
 ![image-20221009153852300](./assets/image-20221009153852300.png)
 
 方便统一管理
+
+![image-20221009162541438](./assets/image-20221009162541438.png)
+
+![image-20221009162549379](./assets/image-20221009162549379.png)
+
+![image-20221009162610368](./assets/image-20221009162610368.png)
+
+![image-20221009162629128](./assets/image-20221009162629128.png)
+
+### 添加渲染API
+
+用RendererAPI和工厂方法封装OpenGL DirectX等
+
+用RendererCommand封装RendererAPI的操作
+
+## 相机
+
