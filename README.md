@@ -260,3 +260,17 @@
 在shader中调用这个vp矩阵
 
 ![image-20221010192615983](./assets/image-20221010192615983.png)
+
+## Timestep
+
+游戏中要统一运行速度
+
+![image-20221011091852066](./assets/image-20221011091852066.png)
+
+![image-20221011092042831](./assets/image-20221011092042831.png)
+
+![image-20221011092526563](./assets/image-20221011092526563.png)
+
+## 创建Shader工厂
+
+将之前的OpenGLShader转移到Shader工厂的子类下
