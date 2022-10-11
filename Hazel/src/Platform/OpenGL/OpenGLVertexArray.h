@@ -20,6 +20,8 @@ namespace Hazel {
 		virtual const std::shared_ptr<IndexBuffer>& GetIndexBuffer() const { return m_IndexBuffer; }
 	private:
 		uint32_t m_RendererID;
+
+		uint32_t m_VertexBufferIndex = 0;
 		// 顶点缓冲区不一定只存储顶点位置。它们还用于存储顶点法线，UV坐标等。所以有多个
 		std::vector<std::shared_ptr<VertexBuffer>> m_VertexBuffers;
 		std::shared_ptr<IndexBuffer> m_IndexBuffer;

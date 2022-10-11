@@ -274,3 +274,15 @@
 ## 创建Shader工厂
 
 将之前的OpenGLShader转移到Shader工厂的子类下
+
+## 添加Texture
+
+加载纹理
+
+![image-20221011153842617](./assets/image-20221011153842617.png)
+
+gl传送纹理到gpu
+
+![image-20221011155617759](./assets/image-20221011155617759.png)
+
+通过vs传入纹素然后通过fs上色![image-20221011160628484](./assets/image-20221011160628484.png)

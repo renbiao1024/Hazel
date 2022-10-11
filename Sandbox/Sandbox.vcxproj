@@ -89,10 +89,6 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <StackReserveSize>
-      </StackReserveSize>
-      <StackCommitSize>
-      </StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -114,10 +110,6 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <StackReserveSize>
-      </StackReserveSize>
-      <StackCommitSize>
-      </StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
@@ -139,10 +131,6 @@
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <StackReserveSize>
-      </StackReserveSize>
-      <StackCommitSize>
-      </StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
