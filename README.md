@@ -1,7 +1,6 @@
-# Hazel Engine
+![Hazel](./assets/Hazel_Logo_Text_Light_Square.png "Hazel")
 
-
-## 任务
+# 任务
 
 - 入口
 - 应用层
@@ -292,3 +291,29 @@ gl传送纹理到gpu
 ![image-20221011163730798](./assets/image-20221011163730798.png)
 
 ![image-20221011183956711](./assets/image-20221011183956711.png)
+
+## 独立出shader文件
+
+![image-20221011210158923](./assets/image-20221011210158923.png)
+
+使用 fstream读取文件
+
+![image-20221011210339682](./assets/image-20221011210339682.png)
+
+规定每个shader中的 vertex 和fragment 都是用 #type 分割的
+
+所以字符串处理把对应的shader存到unordered_map中
+
+![image-20221011210123407](./assets/image-20221011210123407.png)
+
+使用gl编译ma中的shader
+
+![image-20221011210519658](./assets/image-20221011210519658.png)
+
+使用：
+
+![image-20221011210808354](./assets/image-20221011210808354.png)
+
+## 添加ShaderLibrary记录拥有的shader
+
+![image-20221011213055046](./assets/image-20221011213055046.png)
