@@ -15,12 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="assets\shaders\Texture.glsl" />
     <None Include="imgui.ini" />
+    <None Include="assets\shaders\Texture.glsl" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SandboxApp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\textures\Checkerboard.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="assets\textures\ChernoLogo.png">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>
