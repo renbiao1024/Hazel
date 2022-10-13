@@ -17,9 +17,13 @@
   <ItemGroup>
     <None Include="imgui.ini" />
     <None Include="assets\shaders\Texture.glsl" />
+    <None Include="assets\shaders\FlatColor.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="SandboxApp.cpp">
+    <ClCompile Include="src\SandboxApp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sandbox2D.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,5 +34,10 @@
     <Image Include="assets\textures\ChernoLogo.png">
       <Filter>资源文件</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Sandbox2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
