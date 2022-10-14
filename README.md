@@ -366,7 +366,9 @@ namespace Hazel {
 
 开启深度测试添加几个方形
 
-## 计算各个操作的耗时
+## 调试工具
+
+### 计算各个操作的耗时
 
 使用chrono计算各个操作的耗时
 
@@ -377,3 +379,5 @@ namespace Hazel {
 渲染到imgui上
 
 ![image-20221014102310858](./assets/image-20221014102310858.png)
+
+将上述代码封装在Instrumentor中
