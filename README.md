@@ -381,3 +381,19 @@ namespace Hazel {
 ![image-20221014102310858](./assets/image-20221014102310858.png)
 
 将上述代码封装在Instrumentor中
+
+## 计算图形的旋转
+
+![image-20221014174335894](./assets/image-20221014174335894.png)
+
+## 批处理
+
+![image-20221014202457901](./assets/image-20221014202457901.png)
+
+![image-20221014202223441](./assets/image-20221014202223441.png)
+
+将需要的信息存到buffer 依次赋值![image-20221014203044235](./assets/image-20221014203044235.png)
+
+在一次drawcall中全部处理
+
+![image-20221014203220697](./assets/image-20221014203220697.png)
