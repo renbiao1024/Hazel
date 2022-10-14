@@ -11,14 +11,14 @@
 
 #include "Hazel/ImGui/ImGuiLayer.h"
 
+int main(int argc, char** argv);
+
 namespace Hazel {
 	class Application
 	{
 	public:
 		Application();
 		virtual ~Application();
-
-		void Run();
 		
 		void OnEvent(Event& e);
 
@@ -29,6 +29,7 @@ namespace Hazel {
 		inline static Application& Get() { return *s_Instance; }
 
 	private:
+		void Run();
 		bool OnWindowClose(WindowCloseEvent& e);
 		bool OnWindowResize(WindowResizeEvent& e);
 	private:
@@ -43,7 +44,7 @@ namespace Hazel {
 	private:
 
 		static Application* s_Instance;
-
+		friend int ::main(int argc, char** argv);
 	};
 
 	Application* CreateApplication();
