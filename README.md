@@ -397,3 +397,7 @@ namespace Hazel {
 在一次drawcall中全部处理
 
 ![image-20221014203220697](./assets/image-20221014203220697.png)
+
+添加对材质的批处理
+
+![image-20221015154806865](./assets/image-20221015154806865.png)
