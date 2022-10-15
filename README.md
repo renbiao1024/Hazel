@@ -401,3 +401,11 @@ namespace Hazel {
 添加对材质的批处理
 
 ![image-20221015154806865](./assets/image-20221015154806865.png)
+
+添加对旋转图形的drawcall
+
+添加对drawcall的状态的检测
+
+![image-20221015164956033](./assets/image-20221015164956033.png)
+
+![image-20221015165007109](./assets/image-20221015165007109.png)
