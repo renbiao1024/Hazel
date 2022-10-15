@@ -409,3 +409,10 @@ namespace Hazel {
 ![image-20221015164956033](./assets/image-20221015164956033.png)
 
 ![image-20221015165007109](./assets/image-20221015165007109.png)
+
+## 添加可扩展空间
+
+![image-20221015193016259](./assets/image-20221015193016259.png)
+
+## 封装opengl的帧缓冲
+
