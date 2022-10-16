@@ -15,7 +15,7 @@ namespace Hazel
 		OrthographicCameraController(float aspectRatio, bool rotation = false);
 		void OnUpdate(Timestep ts);//根据移动速度和旋转速度 控制相机变换
 		void OnEvent(Event& e);//绑定按键回调函数 
-
+		void OnResize(float width, float height);
 		OrthographicCamera& GetCamera() { return m_Camera; }
 		const OrthographicCamera& GetCamera() const { return m_Camera; }
 
