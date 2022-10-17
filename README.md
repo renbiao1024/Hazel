@@ -433,3 +433,19 @@ namespace Hazel {
 根据对视口是否聚焦和悬停决定是否允许对其操作
 
 ![image-20221016164135958](./assets/image-20221016164135958.png)
+
+## ECS
+
+将相同的entity存到数组中，统一绘制
+
+![image-20221016175641832](./assets/image-20221016175641832.png)
+
+### entity
+
+entity是component的集合
+
+使用entity在scene的注册表中增删改查
+
+![image-20221017102546297](./assets/image-20221017102546297.png)
+
+![image-20221017102809779](./assets/image-20221017102809779.png)
