@@ -26,30 +26,32 @@ namespace Hazel {
 		// Entity
 		auto square = m_ActiveScene->CreateEntity("Green Square");
 		square.AddComponent<SpriteRendererComponent>(glm::vec4{ 0.0f, 1.0f, 0.0f, 1.0f });
+		auto redSquare = m_ActiveScene->CreateEntity("Red Square");
+		redSquare.AddComponent<SpriteRendererComponent>(glm::vec4{ 1.0f, 0.0f, 0.0f, 1.0f });
 
 		m_SquareEntity = square;
 
-		m_CameraEntity = m_ActiveScene->CreateEntity("Camera Entity");
+		m_CameraEntity = m_ActiveScene->CreateEntity("Camera A");
 		m_CameraEntity.AddComponent<CameraComponent>();
 
-		m_SecondCamera = m_ActiveScene->CreateEntity("Clip-Space Entity");
+		m_SecondCamera = m_ActiveScene->CreateEntity("Camera B");
 		auto& cc = m_SecondCamera.AddComponent<CameraComponent>();
 		cc.Primary = false;
 
 		class CameraController : public ScriptableEntity
 		{
 		public:
-			void OnCreate()
+			virtual void OnCreate() override
 			{
 				auto& transform = GetComponent<TransformComponent>().Transform;
 				transform[3][0] = rand() % 10 - 5.0f;
 			}
 
-			void OnDestroy()
+			virtual void OnDestroy() override
 			{
 			}
 
-			void OnUpdate(Timestep ts)
+			virtual void OnUpdate(Timestep ts) override
 			{
 				auto& transform = GetComponent<TransformComponent>().Transform;
 				float speed = 5.0f;
@@ -67,6 +69,7 @@ namespace Hazel {
 
 		m_CameraEntity.AddComponent<NativeScriptComponent>().Bind<CameraController>();
 		m_SecondCamera.AddComponent<NativeScriptComponent>().Bind<CameraController>();
+		m_SceneHierarchyPanel.SetContext(m_ActiveScene);
 	}
 
 	void EditorLayer::OnDetach()
@@ -171,7 +174,7 @@ namespace Hazel {
 		}
 
 		{
-			ImGui::Begin("Settings");
+			ImGui::Begin("Stats");
 
 			auto stats = Renderer2D::GetStats();
 			ImGui::Text("Renderer2D Stats:");
@@ -179,45 +182,14 @@ namespace Hazel {
 			ImGui::Text("Quads: %d", stats.QuadCount);
 			ImGui::Text("Vertices: %d", stats.GetTotalVertexCount());
 			ImGui::Text("Indices: %d", stats.GetTotalIndexCount());
+
 			ImGui::End();
+
 
 		}
 
 		{
-			ImGui::Begin("Assets");
-			ImGui::End();
-		}
-
-		{
-			ImGui::Begin("Details");
-
-			if (m_SquareEntity)
-			{
-				ImGui::Separator();
-				auto& tag = m_SquareEntity.GetComponent<TagComponent>().Tag;
-				ImGui::Text("%s", tag.c_str());
-
-				auto& squareColor = m_SquareEntity.GetComponent<SpriteRendererComponent>().Color;
-				ImGui::ColorEdit4("Square Color", glm::value_ptr(squareColor));
-				ImGui::Separator();
-			}
-
-			if (ImGui::Checkbox("Camera A", &m_PrimaryCamera))
-			{
-				m_CameraEntity.GetComponent<CameraComponent>().Primary = m_PrimaryCamera;
-				m_SecondCamera.GetComponent<CameraComponent>().Primary = !m_PrimaryCamera;
-			}
-			{
-				Entity& camComp = m_PrimaryCamera ? m_CameraEntity : m_SecondCamera;
-				ImGui::DragFloat3("Camera Transform",
-					glm::value_ptr(camComp.GetComponent<TransformComponent>().Transform[3]));
-
-				auto& camera = camComp.GetComponent<CameraComponent>().Camera;
-				float orthoSize = camera.GetOrthographicSize();
-				if (ImGui::DragFloat("Camera Ortho Size", &orthoSize))
-					camera.SetOrthographicSize(orthoSize);
-			}
-			ImGui::End();
+			m_SceneHierarchyPanel.OnImGuiRender();
 		}
 
 		{	
