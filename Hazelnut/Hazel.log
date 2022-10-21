@@ -1,18 +1,10 @@
-[16:41:50] [info] HAZEL: Creating window Hazel Editor (1600, 900)
-[16:41:51] [info] HAZEL: OpenGL Info:
-[16:41:51] [info] HAZEL:   Vendor: Intel
-[16:41:51] [info] HAZEL:   Renderer: Intel(R) Iris(R) Xe Graphics
-[16:41:51] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.3251
-[16:41:55] [trace] HAZEL: Deserializing scene 'Untitled'
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
-[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
+[19:27:49] [info] HAZEL: Creating window Hazel Editor (1600, 900)
+[19:27:49] [info] HAZEL: OpenGL Info:
+[19:27:49] [info] HAZEL:   Vendor: Intel
+[19:27:49] [info] HAZEL:   Renderer: Intel(R) Iris(R) Xe Graphics
+[19:27:49] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.3251
+[19:27:58] [trace] HAZEL: Deserializing scene 'Untitled'
+[19:27:58] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top
+[19:27:58] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
+[19:27:58] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right
+[19:27:58] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left

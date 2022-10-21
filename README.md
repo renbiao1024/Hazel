@@ -471,3 +471,5 @@ entity是component的集合
 对entity序列化 和 反序列化
 
 用于save open
+
+![image-20221021161656131](./assets/image-20221021161656131.png)
