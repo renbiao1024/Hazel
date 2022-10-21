@@ -465,3 +465,9 @@ entity是component的集合
 ![image-20221018204338394](./assets/image-20221018204338394.png)
 
 ![image-20221018204405162](./assets/image-20221018204405162.png)
+
+# 添加保存系统
+
+对entity序列化 和 反序列化
+
+用于save open

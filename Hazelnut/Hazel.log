@@ -1,20 +1,18 @@
-[15:37:50] [info] HAZEL: Creating window Hazel Editor (1600, 900)
-[15:37:50] [info] HAZEL: OpenGL Info:
-[15:37:50] [info] HAZEL:   Vendor: Intel
-[15:37:50] [info] HAZEL:   Renderer: Intel(R) Iris(R) Xe Graphics
-[15:37:50] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.3251
-[15:37:55] [trace] HAZEL: Deserializing scene 'Untitled'
-[15:37:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
-[15:37:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
-[15:37:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
-[15:37:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
-[15:38:12] [trace] HAZEL: Deserializing scene 'Untitled'
-[15:38:12] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
-[15:38:12] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
-[15:38:12] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
-[15:38:12] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
-[15:38:20] [trace] HAZEL: Deserializing scene 'Untitled'
-[15:38:20] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
-[15:38:20] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
-[15:38:20] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
-[15:38:20] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
+[16:41:50] [info] HAZEL: Creating window Hazel Editor (1600, 900)
+[16:41:51] [info] HAZEL: OpenGL Info:
+[16:41:51] [info] HAZEL:   Vendor: Intel
+[16:41:51] [info] HAZEL:   Renderer: Intel(R) Iris(R) Xe Graphics
+[16:41:51] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.3251
+[16:41:55] [trace] HAZEL: Deserializing scene 'Untitled'
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Green Square
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Red Square
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera A
+[16:41:55] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera B
