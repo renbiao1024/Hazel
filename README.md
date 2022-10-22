@@ -477,3 +477,7 @@ entity是component的集合
 # 多重渲染目标MRT
 
 记录深度用于支持鼠标点击事件
+
+![image-20221022162707114](./assets/image-20221022162707114.png)
+
+根据hovered entity的id来输出entity的tag
