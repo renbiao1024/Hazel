@@ -473,3 +473,7 @@ entity是component的集合
 用于save open
 
 ![image-20221021161656131](./assets/image-20221021161656131.png)
+
+# 多重渲染目标MRT
+
+记录深度用于支持鼠标点击事件
