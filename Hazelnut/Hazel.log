@@ -1,18 +1,18 @@
-[20:29:48] [info] HAZEL: Creating window Hazelnut (1600, 900)
-[20:29:48] [info] HAZEL: OpenGL Info:
-[20:29:48] [info] HAZEL:   Vendor: NVIDIA Corporation
-[20:29:48] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU/PCIe/SSE2
-[20:29:48] [info] HAZEL:   Version: 4.6.0 NVIDIA 517.00
-[20:29:48] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
-[20:29:48] [trace] HAZEL:     1 uniform buffers
-[20:29:48] [trace] HAZEL:     0 resources
-[20:29:48] [trace] HAZEL: Uniform buffers:
-[20:29:48] [trace] HAZEL:   _47_49
-[20:29:48] [trace] HAZEL:     Size = 64
-[20:29:48] [trace] HAZEL:     Binding = 0
-[20:29:48] [trace] HAZEL:     Members = 1
-[20:29:48] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
-[20:29:48] [trace] HAZEL:     0 uniform buffers
-[20:29:48] [trace] HAZEL:     1 resources
-[20:29:48] [trace] HAZEL: Uniform buffers:
-[20:29:48] [warning] HAZEL: Shader creation took 10.8341 ms
+[15:12:59] [info] HAZEL: Creating window Hazelnut (1600, 900)
+[15:13:00] [info] HAZEL: OpenGL Info:
+[15:13:00] [info] HAZEL:   Vendor: NVIDIA Corporation
+[15:13:00] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU/PCIe/SSE2
+[15:13:00] [info] HAZEL:   Version: 4.6.0 NVIDIA 517.00
+[15:13:00] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
+[15:13:00] [trace] HAZEL:     1 uniform buffers
+[15:13:00] [trace] HAZEL:     0 resources
+[15:13:00] [trace] HAZEL: Uniform buffers:
+[15:13:00] [trace] HAZEL:   _47_49
+[15:13:00] [trace] HAZEL:     Size = 64
+[15:13:00] [trace] HAZEL:     Binding = 0
+[15:13:00] [trace] HAZEL:     Members = 1
+[15:13:00] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
+[15:13:00] [trace] HAZEL:     0 uniform buffers
+[15:13:00] [trace] HAZEL:     1 resources
+[15:13:00] [trace] HAZEL: Uniform buffers:
+[15:13:00] [warning] HAZEL: Shader creation took 11.4576 ms
