@@ -481,3 +481,8 @@ entity是component的集合
 ![image-20221022162707114](./assets/image-20221022162707114.png)
 
 根据hovered entity的id来输出entity的tag
+
+# 添加内容浏览器
+
+
+
