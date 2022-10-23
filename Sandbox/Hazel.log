@@ -1,5 +1,18 @@
-[16:02:28] [info] HAZEL: Creating window Hazel App (1280, 720)
-[16:02:28] [info] HAZEL: OpenGL Info:
-[16:02:28] [info] HAZEL:   Vendor: Intel
-[16:02:28] [info] HAZEL:   Renderer: Intel(R) Iris(R) Xe Graphics
-[16:02:28] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.3251
+[16:40:45] [info] HAZEL: Creating window Hazel App (1600, 900)
+[16:40:45] [info] HAZEL: OpenGL Info:
+[16:40:45] [info] HAZEL:   Vendor: NVIDIA Corporation
+[16:40:45] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU/PCIe/SSE2
+[16:40:45] [info] HAZEL:   Version: 4.6.0 NVIDIA 517.00
+[16:40:48] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
+[16:40:48] [trace] HAZEL:     1 uniform buffers
+[16:40:48] [trace] HAZEL:     0 resources
+[16:40:48] [trace] HAZEL: Uniform buffers:
+[16:40:48] [trace] HAZEL:   _47_49
+[16:40:48] [trace] HAZEL:     Size = 64
+[16:40:48] [trace] HAZEL:     Binding = 0
+[16:40:48] [trace] HAZEL:     Members = 1
+[16:40:48] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
+[16:40:48] [trace] HAZEL:     0 uniform buffers
+[16:40:48] [trace] HAZEL:     1 resources
+[16:40:48] [trace] HAZEL: Uniform buffers:
+[16:40:50] [warning] HAZEL: Shader creation took 4770.93 ms
