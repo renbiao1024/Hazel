@@ -1,26 +1,26 @@
-[16:45:51] [info] HAZEL: Creating window Hazelnut (1600, 900)
-[16:45:52] [info] HAZEL: OpenGL Info:
-[16:45:52] [info] HAZEL:   Vendor: NVIDIA Corporation
-[16:45:52] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU/PCIe/SSE2
-[16:45:52] [info] HAZEL:   Version: 4.6.0 NVIDIA 517.00
-[16:45:52] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
-[16:45:52] [trace] HAZEL:     1 uniform buffers
-[16:45:52] [trace] HAZEL:     0 resources
-[16:45:52] [trace] HAZEL: Uniform buffers:
-[16:45:52] [trace] HAZEL:   _47_49
-[16:45:52] [trace] HAZEL:     Size = 64
-[16:45:52] [trace] HAZEL:     Binding = 0
-[16:45:52] [trace] HAZEL:     Members = 1
-[16:45:52] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
-[16:45:52] [trace] HAZEL:     0 uniform buffers
-[16:45:52] [trace] HAZEL:     1 resources
-[16:45:52] [trace] HAZEL: Uniform buffers:
-[16:45:52] [warning] HAZEL: Shader creation took 13.832 ms
-[16:46:08] [trace] HAZEL: Deserializing scene 'Untitled'
-[16:46:08] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left
-[16:46:08] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right2
-[16:46:08] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top2
-[16:46:08] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left2
-[16:46:08] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right
-[16:46:08] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
-[16:46:08] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top
+[18:57:31] [info] HAZEL: Creating window Hazelnut (1600, 900)
+[18:57:31] [info] HAZEL: OpenGL Info:
+[18:57:31] [info] HAZEL:   Vendor: NVIDIA Corporation
+[18:57:31] [info] HAZEL:   Renderer: NVIDIA GeForce RTX 3070 Ti Laptop GPU/PCIe/SSE2
+[18:57:31] [info] HAZEL:   Version: 4.6.0 NVIDIA 517.00
+[18:57:31] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
+[18:57:31] [trace] HAZEL:     1 uniform buffers
+[18:57:31] [trace] HAZEL:     0 resources
+[18:57:31] [trace] HAZEL: Uniform buffers:
+[18:57:31] [trace] HAZEL:   _47_49
+[18:57:31] [trace] HAZEL:     Size = 64
+[18:57:31] [trace] HAZEL:     Binding = 0
+[18:57:31] [trace] HAZEL:     Members = 1
+[18:57:31] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
+[18:57:31] [trace] HAZEL:     0 uniform buffers
+[18:57:31] [trace] HAZEL:     1 resources
+[18:57:31] [trace] HAZEL: Uniform buffers:
+[18:57:31] [warning] HAZEL: Shader creation took 11.1227 ms
+[18:57:39] [trace] HAZEL: Deserializing scene 'Untitled'
+[18:57:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left
+[18:57:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right2
+[18:57:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top2
+[18:57:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left2
+[18:57:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right
+[18:57:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
+[18:57:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top

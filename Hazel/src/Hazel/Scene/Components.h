@@ -6,6 +6,7 @@
 #include <glm/gtx/quaternion.hpp>
 #include "SceneCamera.h"
 #include "ScriptableEntity.h"
+#include "Hazel/Renderer/Texture.h"
 
 namespace Hazel
 {
@@ -50,7 +51,8 @@ namespace Hazel
 	struct SpriteRendererComponent
 	{
 		glm::vec4 Color{ 1.0f, 1.0f, 1.0f, 1.0f };
-
+		Ref<Texture2D> Texture;
+		float TilingFactor = 1.0f;
 		SpriteRendererComponent() = default;
 		SpriteRendererComponent(const SpriteRendererComponent&) = default;
 		SpriteRendererComponent(const glm::vec4& color)
