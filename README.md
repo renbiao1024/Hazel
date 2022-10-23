@@ -484,5 +484,5 @@ entity是component的集合
 
 # 添加内容浏览器
 
-
+![image-20221023161949069](./assets/image-20221023161949069.png)
 
