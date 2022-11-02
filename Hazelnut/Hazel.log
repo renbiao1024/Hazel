@@ -1,39 +1,23 @@
-[20:58:33] [info] HAZEL: Creating window Hazelnut (1600, 900)
-[20:58:34] [info] HAZEL: OpenGL Info:
-[20:58:34] [info] HAZEL:   Vendor: Intel
-[20:58:34] [info] HAZEL:   Renderer: Intel(R) Iris(R) Xe Graphics
-[20:58:34] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.3251
-[20:58:34] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
-[20:58:34] [trace] HAZEL:     1 uniform buffers
-[20:58:34] [trace] HAZEL:     0 resources
-[20:58:34] [trace] HAZEL: Uniform buffers:
-[20:58:34] [trace] HAZEL:   _47_49
-[20:58:34] [trace] HAZEL:     Size = 64
-[20:58:34] [trace] HAZEL:     Binding = 0
-[20:58:34] [trace] HAZEL:     Members = 1
-[20:58:34] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
-[20:58:34] [trace] HAZEL:     0 uniform buffers
-[20:58:34] [trace] HAZEL:     1 resources
-[20:58:34] [trace] HAZEL: Uniform buffers:
-[20:58:34] [warning] HAZEL: Shader creation took 50.6932 ms
-[20:58:39] [trace] HAZEL: Deserializing scene 'Untitled'
-[20:58:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Floor
-[20:58:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Sprite
-[20:58:39] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
-[20:58:42] [trace] HAZEL: Deserializing scene 'Untitled'
-[20:58:42] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left
-[20:58:42] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right2
-[20:58:42] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top2
-[20:58:42] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left2
-[20:58:42] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right
-[20:58:42] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
-[20:58:42] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top
-[20:58:46] [trace] HAZEL: Deserializing scene 'Untitled'
-[20:58:49] [trace] HAZEL: Deserializing scene 'Untitled'
-[20:58:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left
-[20:58:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right2
-[20:58:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top2
-[20:58:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Left2
-[20:58:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Right
-[20:58:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Camera
-[20:58:49] [trace] HAZEL: Deserialized entity with ID = 12837192831273, name = Top
+[21:50:07] [info] HAZEL: Creating window Hazelnut (1600, 900)
+[21:50:08] [info] HAZEL: OpenGL Info:
+[21:50:08] [info] HAZEL:   Vendor: Intel
+[21:50:08] [info] HAZEL:   Renderer: Intel(R) Iris(R) Xe Graphics
+[21:50:08] [info] HAZEL:   Version: 4.6.0 - Build 31.0.101.3251
+[21:50:08] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Texture.glsl
+[21:50:08] [trace] HAZEL:     1 uniform buffers
+[21:50:08] [trace] HAZEL:     0 resources
+[21:50:08] [trace] HAZEL: Uniform buffers:
+[21:50:08] [trace] HAZEL:   _47_49
+[21:50:08] [trace] HAZEL:     Size = 64
+[21:50:08] [trace] HAZEL:     Binding = 0
+[21:50:08] [trace] HAZEL:     Members = 1
+[21:50:08] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Texture.glsl
+[21:50:08] [trace] HAZEL:     0 uniform buffers
+[21:50:08] [trace] HAZEL:     1 resources
+[21:50:08] [trace] HAZEL: Uniform buffers:
+[21:50:08] [warning] HAZEL: Shader creation took 52.4466 ms
+[21:50:10] [trace] HAZEL: Deserializing scene 'Untitled'
+[21:50:10] [trace] HAZEL: Deserialized entity with ID = 16672940118998907085, name = Floor
+[21:50:10] [trace] HAZEL: Deserialized entity with ID = 4793924497264767156, name = Camera
+[21:50:10] [trace] HAZEL: Deserialized entity with ID = 15045535320033348975, name = Sprite
+[21:50:10] [trace] HAZEL: Deserialized entity with ID = 5134011587522944740, name = Floor
