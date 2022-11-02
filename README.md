@@ -486,3 +486,8 @@ entity是component的集合
 
 ![image-20221023161949069](./assets/image-20221023161949069.png)
 
+# start 按钮
+
+![image-20221023194915724](./assets/image-20221023194915724.png)
+
+# 添加 UUID 通用唯一识别码
