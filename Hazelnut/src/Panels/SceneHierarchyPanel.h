@@ -20,11 +20,27 @@ namespace Hazel {
 		void SetSelectedEntity(Entity entity);
 
 	private:
+		template<typename T>
+		void DisplayAddComponentEntry(const std::string& entryName);
+
 		void DrawEntityNode(Entity entity);
 		void DrawComponents(Entity entity);
 	private:
 		Ref<Scene> m_Context;
 		Entity m_SelectionContext;
 	};
+
+	template<typename T>
+	void SceneHierarchyPanel::DisplayAddComponentEntry(const std::string& entryName)
+	{
+		if (!m_SelectionContext.HasComponent<T>())
+		{
+			if (ImGui::MenuItem(entryName.c_str()))
+			{
+				m_SelectionContext.AddComponent<T>();
+				ImGui::CloseCurrentPopup();
+			}
+		}
+	}
 
 }

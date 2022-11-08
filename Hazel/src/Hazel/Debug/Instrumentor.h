@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Hazel/Core/Log.h"
 #include <algorithm>
 #include <chrono>
 #include <fstream>
@@ -8,8 +9,6 @@
 #include <thread>
 #include <mutex>
 #include <sstream>
-
-#include "Hazel/Core/Log.h"
 
 namespace Hazel {
 

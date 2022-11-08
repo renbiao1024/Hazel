@@ -1,7 +1,7 @@
 #pragma once
 
-#include <memory>
 #include "Hazel/Renderer/Buffer.h"
+#include <memory>
 
 namespace Hazel {
 

@@ -1,8 +1,8 @@
 #pragma once
 
-#include <glm/glm.hpp>
 #include "Hazel/Core/KeyCodes.h"
 #include "Hazel/Core/MouseCodes.h"
+#include <glm/glm.hpp>
 
 namespace Hazel
 {
